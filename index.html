@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hare Run — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Hare Run (com.harerun.app) by Bunvaro Games.">
+<!--
+  PUBLISHED ARTEFACT. The source of truth is docs/PRIVACY_POLICY.md in the game
+  repo — edit that first, then mirror the change here, and bump the effective
+  date. A policy that drifts from the app is worse than no policy.
+
+  No external requests by design: no web fonts, no analytics, no CDN. A privacy
+  policy page that loads Google Fonts would hand every visitor's IP address to
+  Google while the text explains how little we collect. System fonts only.
+-->
+<style>
+  :root {
+    --bg:#1B1A14; --ink:#E8DDC6; --dim:#9A8765; --accent:#C8A574; --rule:#2E2C22;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.6; -webkit-text-size-adjust:100%;
+  }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1, h2, h3 { font-family:Georgia,"Times New Roman",serif; font-weight:600; line-height:1.25; }
+  h1 { font-size:2rem; font-style:italic; margin:0 0 .35rem; }
+  h2 { font-size:1.3rem; margin:2.6rem 0 .75rem; color:var(--ink); }
+  h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; color:var(--accent); }
+  .meta { color:var(--dim); font-size:.95rem; margin:0 0 2rem; }
+  .meta div { margin:.15rem 0; }
+  hr { border:0; border-top:1px solid var(--rule); margin:2rem 0; }
+  p, li { color:#CFC3A8; }
+  strong { color:var(--ink); }
+  em { color:var(--dim); }
+  ul { padding-left:1.15rem; }
+  li { margin:.55rem 0; }
+  a { color:var(--accent); text-overflow:ellipsis; overflow-wrap:anywhere; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+           color:var(--dim); font-size:.85rem; }
+  @media (max-width:480px) { body { font-size:16px; } h1 { font-size:1.6rem; } main { padding-top:2rem; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Hare Run — Privacy Policy</h1>
+<div class="meta">
+  <div><strong>Effective date:</strong> 2026-07-30</div>
+  <div><strong>App:</strong> Hare Run (com.harerun.app)</div>
+  <div><strong>Developer:</strong> Bunvaro Games</div>
+  <div><strong>Contact:</strong> <a href="mailto:bunvarogames@gmail.com">bunvarogames@gmail.com</a></div>
+</div>
+
+<hr>
+
+<h2>1. Summary</h2>
+<p>Hare Run is a single-player arcade chase game with an optional online leaderboard.
+We keep data collection to the minimum needed to run the game and the leaderboard.
+We do <strong>not</strong> collect your real name, email, phone number, precise location,
+photos, contacts, or an advertising identifier. We do not sell your data and we do not
+share it with third parties for advertising.</p>
+<p>This policy is kept consistent with our Google Play Data Safety disclosure: analytics
+is <strong>off until you consent</strong>, crash/diagnostic data runs for stability, and
+the leaderboard stores your nickname and score.</p>
+
+<h2>2. What we collect and why</h2>
+<ul>
+  <li><strong>Pseudonymous account identifier (user ID).</strong> When you first open the
+  game, Firebase Anonymous Authentication creates a random pseudonymous identifier. This is
+  <strong>considered personal data under the GDPR</strong> even though it is not your name,
+  email, or any directly identifying detail — and we treat it accordingly.
+  <em>Purpose: to own your leaderboard entry so only you can update it.</em></li>
+
+  <li><strong>Nickname.</strong> If you submit a score to the global leaderboard, the
+  nickname you choose is stored and shown publicly to other players.
+  <em>Purpose: to label your leaderboard entry.</em></li>
+
+  <li><strong>Game scores and progress.</strong> Your score, wave reached, and game mode
+  are stored with your leaderboard entry. Your personal best runs and unlock progress are
+  also stored locally on your device.
+  <em>Purpose: leaderboard ranking and game progression.</em></li>
+
+  <li><strong>Gameplay analytics — off unless you say yes.</strong> The first time you open
+  the game we ask, on a screen with two equally weighted choices, whether we may record how
+  you play. <strong>Nothing is recorded unless you choose “Allow”</strong> — collection is
+  switched off before the game starts and is only switched on by your answer. If you
+  consent, we record a small set of events: the game being opened, a run started, a run
+  ended (mode, biome, score, level or wave reached, pups gathered, how long the field took),
+  an unlock earned, and a generic flag if the game crashes. These events never include your
+  name or any free-form text you type. When analytics is enabled, Firebase may also process
+  limited device/session identifiers needed to provide the service.
+  <em>Purpose: to see where the game is too hard, too slow or not fun.</em>
+  <em>Legal basis: your consent.</em>
+  <strong>You can withdraw consent at any time</strong> from the pause menu
+  (“Share play data”), which switches collection back off immediately. Declining, or later
+  withdrawing, changes nothing else about the game — every mode and the global leaderboard
+  work exactly the same either way.</li>
+
+  <li><strong>Crash &amp; diagnostic data — always on.</strong> To keep the game stable we
+  use Firebase Crashlytics. When the app crashes it collects a crash report (error type,
+  stack trace, device state) and a pseudonymous installation identifier. This contains no
+  name, email, or free-form text, and is never used for advertising or behavioural tracking.
+  <em>Legal basis: our legitimate interest in keeping the app stable and secure.</em></li>
+</ul>
+
+<h3>What we do NOT collect</h3>
+<p>Real name, email address, phone number, precise or coarse location, photos or media,
+contacts, microphone/camera input, advertising ID, or your device’s contact list.
+(The game also does not currently upload gameplay replays.)</p>
+
+<h2>3. How data is shared</h2>
+<p>We use <strong>Google Firebase</strong> (Authentication, Cloud Firestore, Analytics, and
+Crashlytics) as a data processor. We configure Firebase to respect consent settings:
+<strong>analytics data collection is controlled at runtime and stays off until you
+consent</strong>, while crash/diagnostic reporting runs under our legitimate interest in
+stability. Data is processed under Google’s privacy terms:
+<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>
+and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+Your nickname and score are visible to other players on the public leaderboard. We do
+<strong>not</strong> share data with any third party for advertising or marketing.</p>
+
+<h2>4. Data security and retention</h2>
+<p>Data is transmitted over encrypted connections (HTTPS/TLS). Your leaderboard entry
+(nickname + score) is retained until you request deletion. Local data stays on your device
+until you uninstall the app or clear its data.</p>
+
+<h2>5. Your choices and how to delete your data</h2>
+<ul>
+  <li><strong>Analytics.</strong> You are asked once, on first launch, and nothing is
+  recorded unless you agree. You can change that answer at any time from the pause menu
+  (“Share play data”). Withdrawing is as easy as giving consent and takes effect
+  immediately.</li>
+  <li><strong>Your leaderboard entry.</strong> You can request deletion of your entry
+  (nickname and score) by emailing the address at the top of this policy with the nickname
+  you used. There is no in-app self-delete yet, so email is the way to do it.</li>
+  <li><strong>Local data.</strong> Everything stored on your device — best scores, progress,
+  unlocks, your consent answer — is removed when you uninstall the app or clear its storage
+  in Android settings.</li>
+  <li>Depending on where you live, you may have rights to access, correct or delete your
+  data (e.g. GDPR / CCPA); contact us at the address above to exercise them.</li>
+</ul>
+
+<h2>6. Children’s privacy</h2>
+<p>Hare Run is suitable for all ages. We do not knowingly collect personal details such as a
+child’s name, email, or contact information: there is no sign-up and no personal details are
+requested (accounts are pseudonymous). A parent or guardian who believes a child’s nickname
+should be removed, or who wants their data deleted, can contact us at the address above.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>If we change what we collect or how we use it — for example if we add advertising — we
+will update this policy and change the effective date at the top before the change takes
+effect.</p>
+
+<h2>8. Contact</h2>
+<p>Questions or requests:
+<a href="mailto:bunvarogames@gmail.com">bunvarogames@gmail.com</a>.</p>
+
+<footer>
+  Hare Run is made by Bunvaro Games. This page contains no trackers, no cookies and no
+  third-party requests.
+</footer>
+
+</main>
+</body>
+</html>
