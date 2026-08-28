@@ -69,14 +69,21 @@ can delete yourself from inside the game.</p>
 
 <h2>2. What we collect and why</h2>
 <ul>
-  <li><strong>Pseudonymous account identifier (user ID).</strong> When you first open the
-  game, Firebase Anonymous Authentication creates a random pseudonymous identifier. This is
+  <li><strong>Pseudonymous account identifier (user ID).</strong> The first time you do
+  something that needs an account — open the leaderboard, submit a score, or agree to share
+  play data — Firebase Anonymous Authentication creates a random pseudonymous identifier.
+  <strong>It is not created when you simply open and play the game</strong>: if you never
+  touch the leaderboard and never agree to share play data, no identifier exists and nothing
+  about you leaves your device. The identifier is
   <strong>considered personal data under the GDPR</strong> even though it is not your name,
   email, or any directly identifying detail — and we treat it accordingly.
   <em>Purpose: to own your leaderboard entry so only you can update it.</em></li>
 
   <li><strong>Nickname.</strong> If you submit a score to the global leaderboard, the
-  nickname you choose is stored and shown publicly to other players.
+  nickname you chose is stored and shown publicly to other players. <strong>If you never
+  chose one, the game makes one for you</strong> — a short display name built from your
+  pseudonymous identifier, such as “Hare-1a2b” — and that is what appears on the board. You
+  can replace it at any time on the leaderboard screen.
   <em>Purpose: to label your leaderboard entry.</em></li>
 
   <li><strong>Game scores and progress.</strong> Your score, wave reached, and game mode
