@@ -48,7 +48,7 @@
 
 <h1>Hare Run — Privacy Policy</h1>
 <div class="meta">
-  <div><strong>Effective date:</strong> 2026-08-07</div>
+  <div><strong>Effective date:</strong> 2026-08-28</div>
   <div><strong>App:</strong> Hare Run (com.harerun.app)</div>
   <div><strong>Developer:</strong> Bunvaro Games</div>
   <div><strong>Contact:</strong> <a href="mailto:bunvarogames@gmail.com">bunvarogames@gmail.com</a></div>
@@ -62,9 +62,10 @@ We keep data collection to the minimum needed to run the game and the leaderboar
 We do <strong>not</strong> collect your real name, email, phone number, precise location,
 photos, contacts, or an advertising identifier. We do not sell your data and we do not
 share it with third parties for advertising.</p>
-<p>This policy is kept consistent with our Google Play Data Safety disclosure: analytics
-is <strong>off until you consent</strong>, crash/diagnostic data runs for stability, and
-the leaderboard stores your nickname and score.</p>
+<p>This policy is kept consistent with our Google Play Data Safety disclosure: the
+play-session summary is <strong>off until you consent</strong>, there is no crash reporting
+or diagnostics of any kind, and the leaderboard stores your nickname and score — which you
+can delete yourself from inside the game.</p>
 
 <h2>2. What we collect and why</h2>
 <ul>
@@ -87,11 +88,13 @@ the leaderboard stores your nickname and score.</p>
   the game we ask, on a screen with two equally weighted choices, whether we may record how
   you play. <strong>Nothing is recorded unless you choose “Allow”</strong> — collection is
   switched off before the game starts and is only switched on by your answer. If you
-  consent, we record a small set of events: the game being opened, a run started, a run
-  ended (mode, biome, score, level or wave reached, pups gathered, how long the field took),
-  an unlock earned, and a generic flag if the game crashes. These events never include your
-  name or any free-form text you type. When analytics is enabled, Firebase may also process
-  limited device/session identifiers needed to provide the service.
+  consent, we record one short summary per play session, and that summary is the complete
+  list: your pseudonymous identifier, the day you first opened the game and the day of this
+  session, which numbered session it is and how many seconds it lasted, how many runs you
+  started and how many you finished, the outcome and length of the first run in the session,
+  which mode you chose first, and the deepest campaign field and endless wave your device
+  has reached. Nothing else is sent — no score, no biome, no route, no per-run detail, and
+  never your name or any free-form text you type.
   <em>Purpose: to see where the game is too hard, too slow or not fun.</em>
   <em>Legal basis: your consent.</em>
   <strong>You can withdraw consent at any time</strong> from the pause menu
@@ -99,11 +102,9 @@ the leaderboard stores your nickname and score.</p>
   withdrawing, changes nothing else about the game — every mode and the global leaderboard
   work exactly the same either way.</li>
 
-  <li><strong>Crash &amp; diagnostic data — always on.</strong> To keep the game stable we
-  use Firebase Crashlytics. When the app crashes it collects a crash report (error type,
-  stack trace, device state) and a pseudonymous installation identifier. This contains no
-  name, email, or free-form text, and is never used for advertising or behavioural tracking.
-  <em>Legal basis: our legitimate interest in keeping the app stable and secure.</em></li>
+  <li><strong>Crash &amp; diagnostic data — none.</strong> The game contains no crash
+  reporting or diagnostics service. If it stops working, nothing about that is sent to us
+  or to anyone else.</li>
 </ul>
 
 <h3>What we do NOT collect</h3>
@@ -112,11 +113,11 @@ contacts, microphone/camera input, advertising ID, or your device’s contact li
 (The game also does not currently upload gameplay replays.)</p>
 
 <h2>3. How data is shared</h2>
-<p>We use <strong>Google Firebase</strong> (Authentication, Cloud Firestore, Analytics, and
-Crashlytics) as a data processor. We configure Firebase to respect consent settings:
-<strong>analytics data collection is controlled at runtime and stays off until you
-consent</strong>, while crash/diagnostic reporting runs under our legitimate interest in
-stability. Data is processed under Google’s privacy terms:
+<p>We use <strong>Google Firebase</strong> (Authentication and Cloud Firestore) as a data
+processor. We use no analytics SDK and no crash-reporting service: the play-session summary
+described above is written by the game itself, to our own Firestore database, and only after
+you have agreed — <strong>collection stays off until you consent</strong>. Data is processed
+under Google’s privacy terms:
 <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>
 and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
 Your nickname and score are visible to other players on the public leaderboard. We do
@@ -133,12 +134,13 @@ until you uninstall the app or clear its data.</p>
   recorded unless you agree. You can change that answer at any time from the pause menu
   (“Share play data”). Withdrawing is as easy as giving consent and takes effect
   immediately.</li>
-  <li><strong>Your leaderboard entry.</strong> You can request deletion of your entry
-  (nickname and score) by emailing the address at the top of this policy. Because nicknames
-  are not guaranteed unique, please include your <strong>nickname</strong>, your
-  <strong>approximate score</strong>, and the <strong>approximate date</strong> you set that
-  score, so we can identify the right entry if more than one player has used the same
-  nickname. There is no in-app self-delete yet, so email is the way to do it.</li>
+  <li><strong>Your leaderboard entry — you can delete it yourself, in the game.</strong>
+  Open the leaderboard screen and use <strong>“Delete my data”</strong>. It asks you to
+  confirm, then removes your leaderboard entries and your stored nickname. You do not need
+  to contact us and you do not need to explain why. If you would rather write to us instead,
+  email the address at the top of this policy — because nicknames are not guaranteed unique,
+  include your <strong>nickname</strong>, your <strong>approximate score</strong>, and the
+  <strong>approximate date</strong> you set it, so we can identify the right entry.</li>
   <li><strong>Local data.</strong> Everything stored on your device — best scores, progress,
   unlocks, your consent answer — is removed when you uninstall the app or clear its storage
   in Android settings.</li>
