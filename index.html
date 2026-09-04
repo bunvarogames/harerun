@@ -7,8 +7,9 @@
 <meta name="description" content="Privacy policy for Hare Run (com.harerun.app) by Bunvaro Games.">
 <!--
   PUBLISHED ARTEFACT. The source of truth is docs/PRIVACY_POLICY.md in the game
-  repo — edit that first, then mirror the change here, and bump the effective
-  date. A policy that drifts from the app is worse than no policy.
+  repo (harerun_godot, the Godot build this policy describes) — edit that first,
+  then mirror the change here, and bump the effective date. A policy that drifts
+  from the app is worse than no policy.
 
   No external requests by design: no web fonts, no analytics, no CDN. A privacy
   policy page that loads Google Fonts would hand every visitor's IP address to
@@ -48,7 +49,7 @@
 
 <h1>Hare Run — Privacy Policy</h1>
 <div class="meta">
-  <div><strong>Effective date:</strong> 2026-08-28</div>
+  <div><strong>Effective date:</strong> 2026-09-04</div>
   <div><strong>App:</strong> Hare Run (com.harerun.app)</div>
   <div><strong>Developer:</strong> Bunvaro Games</div>
   <div><strong>Contact:</strong> <a href="mailto:bunvarogames@gmail.com">bunvarogames@gmail.com</a></div>
@@ -69,18 +70,20 @@ can delete yourself from inside the game.</p>
 
 <h2>2. What we collect and why</h2>
 <ul>
-  <li><strong>Pseudonymous account identifier (user ID).</strong> The first time you do
-  something that needs an account — open the leaderboard, submit a score, or agree to share
-  play data — Firebase Anonymous Authentication creates a random pseudonymous identifier.
-  <strong>It is not created when you simply open and play the game</strong>: if you never
-  touch the leaderboard and never agree to share play data, no identifier exists and nothing
-  about you leaves your device. The identifier is
+  <li><strong>Pseudonymous account identifier (user ID).</strong> The first time something
+  needs an account — you open the leaderboard, you finish an Endless or Daily run (its score
+  is posted to the board automatically), or you agree to share play data — Firebase
+  Anonymous Authentication creates a random pseudonymous identifier.
+  <strong>It is not created while you only play the Campaign</strong>: until one of those
+  three things happens, no identifier exists and nothing about you leaves your device. The
+  identifier is
   <strong>considered personal data under the GDPR</strong> even though it is not your name,
   email, or any directly identifying detail — and we treat it accordingly.
   <em>Purpose: to own your leaderboard entry so only you can update it.</em></li>
 
-  <li><strong>Nickname.</strong> If you submit a score to the global leaderboard, the
-  nickname you chose is stored and shown publicly to other players. <strong>If you never
+  <li><strong>Nickname.</strong> When an Endless or Daily run ends, its score is posted to
+  the global leaderboard and the nickname you chose is stored and shown publicly to other
+  players. <strong>If you never
   chose one, the game makes one for you</strong> — a short display name built from your
   pseudonymous identifier, such as “Hare-1a2b” — and that is what appears on the board. You
   can replace it at any time on the leaderboard screen.
@@ -140,7 +143,8 @@ until you uninstall the app or clear its data.</p>
   <li><strong>Analytics.</strong> You are asked once, on first launch, and nothing is
   recorded unless you agree. You can change that answer at any time from the pause menu
   (“Share play data”). Withdrawing is as easy as giving consent and takes effect
-  immediately.</li>
+  immediately. Session summaries already sent stay in our database until you ask us to
+  remove them — email the address at the top of this policy.</li>
   <li><strong>Your leaderboard entry — you can delete it yourself, in the game.</strong>
   Open the leaderboard screen and use <strong>“Delete my data”</strong>. It asks you to
   confirm, then removes your leaderboard entries and your stored nickname. You do not need
